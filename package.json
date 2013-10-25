@@ -11,6 +11,8 @@
     "zappajs-partials": "*",
     "stylus": "*",
     "formidable": "*",
-    "helmet": "*"
+    "helmet": "*",
+    "mocha": "*",
+    "chai": "*"
   }
 }
