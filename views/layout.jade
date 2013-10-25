@@ -1,0 +1,19 @@
+!!! 5
+html
+	head
+		meta(charset='utf8')
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		base(href='/')
+		title= title
+		//script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3//angular-resource.min.js")
+		link(href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css", rel="stylesheet")
+		link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css", rel="stylesheet")
+		link(href="http://modernizr.com/downloads/modernizr-latest.js", rel="stylesheet")
+		!= js('lib/ngStorage')
+		block head
+			!= css('app')
+			!= js('app')
+	body
+		block content

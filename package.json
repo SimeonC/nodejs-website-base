@@ -1,0 +1,16 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "resourceful": "*",
+    "zappajs": "*",
+    "jade": "*",
+    "validator": "*",
+    "connect-assets": "*",
+    "zappajs-partials": "*",
+    "stylus": "*",
+    "formidable": "*",
+    "helmet": "*"
+  }
+}
