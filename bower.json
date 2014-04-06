@@ -1,0 +1,11 @@
+{
+  "name": "App Name",
+  "dependencies": {
+  },
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "SimeonC"
+  ],
+  "private": true
+}

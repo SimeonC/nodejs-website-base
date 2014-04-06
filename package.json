@@ -1,18 +1,39 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
-  "dependencies": {
-    "resourceful": "*",
-    "zappajs": "*",
-    "jade": "*",
-    "validator": "*",
-    "connect-assets": "*",
-    "zappajs-partials": "*",
-    "stylus": "*",
-    "formidable": "*",
-    "helmet": "*",
-    "mocha": "*",
-    "chai": "*"
-  }
+	"name": "application-name",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"resourceful": "~0.2.0",
+		"zappajs": "~0.4.0",
+		"jade": "~1.1.0",
+		"express-validator": "~1.0.0",
+		"zappajs-partials": "~0.0.0",
+		"stylus": "~0.42.0",
+		"formidable": "~1.0.0",
+		"helmet": "~0.1.0",
+		"async": "~0.2.0",
+		"coffee-script": "~1.6.0",
+		"tough-cookie": "~0.12.0",
+		"consolidate": "*",
+		"mathjs": "~0.19",
+		"connect-mincer": "*",
+		"bower": "*",
+		"mincer": "~1.0.1"
+	},
+	"scripts": {
+		"postinstall": "coffee postinstall.coffee",
+		"start": "coffee app.coffee",
+		"test": "grunt test"
+	},
+	"devDependencies": {
+		"grunt-release": "~0.5.1",
+		"grunt-contrib-watch": "~0.2.0",
+		"grunt-conventional-changelog": "~0.0.12",
+		"karma": "~0.10",
+		"karma-chai": "*",
+		"karma-mocha": "~0.1",
+		"karma-coverage": "~0.1",
+		"phantomjs": "~1.9.0",
+		"grunt-mocha-test": "*"
+	}
 }

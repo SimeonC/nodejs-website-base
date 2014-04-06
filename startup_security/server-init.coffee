@@ -1,9 +1,13 @@
 @include = ->
+	@include = ->
+	@set 'env': 'development'
 	helmet = require 'helmet'
-	
+	@include 'asset-rack'
 	@configure =>
+		@set 'view options':
+			layout: false
+		@app.engine 'jade', require('consolidate').jade
 		@set 'view engine': 'jade'
-		@use require('connect-assets')()
 		@use helmet.xframe(), helmet.iexss(), helmet.contentTypeOptions(), helmet.cacheControl()
 		@use @express.json(), @express.urlencoded()
 		@use 'methodOverride'
@@ -18,3 +22,4 @@
 			res.locals.csrftoxen = req.session._csrf
 			next()###
 		@use 'static'
+		@use require('express-validator')()
