@@ -10,7 +10,9 @@
 		paths: [
 			'assets/coffeescript',
 			'assets/javascript',
-			'assets/stylus'
+			'assets/stylus',
+			'assets/images'
+			# 'bower_components/component/path/to/dist'
 		]
 	@use connectMincer.assets()
 	if process.env.NODE_ENV isnt 'production' then @app.use '/assets', connectMincer.createServer()

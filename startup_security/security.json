@@ -1,0 +1,15 @@
+{
+	"cookieSecret": "need-to-generate-secret",
+	"auth0": {
+		"clientID": "auth0-clientID",
+		"clientSecret": "auth0-clientSecret",
+		"domain": "auth0-domain"
+	},
+	"couchdb": {
+		"url": "127.0.0.1:5984",
+		"admin_user": {
+			"username": "username",
+			"password": "password"
+		}
+	}
+}
